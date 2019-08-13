@@ -3,9 +3,16 @@ import ReactDOM from "react-dom";
 
 class Layout extends React.Component {
   render() {
+
     return (
-      <h1>Welcome!</h1>
+        <div>
+            <h1>number is {this.get_num(1)} !</h1>
+        </div>
     );
+  }
+
+  get_num(num){
+      return 1 + num;
   }
 }
 
