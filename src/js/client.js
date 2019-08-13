@@ -2,16 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 class Layout extends React.Component {
+
+  constructor(){
+      super();
+      this.name = "yoshi";
+  }
+
   render() {
 
     return (
         <div>
-            <h1>number is {this.get_num(1)} !</h1>
+            <h1>number is {this.getNum(1)} !</h1>
+            <h2>My name is {this.name}</h2>
         </div>
     );
   }
 
-  get_num(num){
+  getNum(num){
       return 1 + num;
   }
 }
